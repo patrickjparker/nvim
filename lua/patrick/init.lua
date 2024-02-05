@@ -1,2 +1,6 @@
 require("patrick.set")
 require("patrick.remap")
+require("patrick.packer")
+require("patrick.harpoon")
+require("patrick.fugitive")
+require("patrick.treesitter")

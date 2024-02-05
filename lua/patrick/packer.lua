@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   use {
       "sainnhe/everforest",
       config = function()
+          vim.cmd "set background=dark"
           vim.cmd "colorscheme everforest"
       end,
   }
@@ -25,6 +26,16 @@ return require('packer').startup(function(use)
 
   use('theprimeagen/harpoon')
   use('tpope/vim-fugitive')
+
+  use {
+      "nvim-lualine/lualine.nvim",
+      after = "nvim-treesitter",
+      config = function()
+          require("lualine").setup()
+      end,
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+  }
+
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -43,4 +54,19 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  -- Which key setup
+  use {
+      "folke/which-key.nvim",
+      config = function()
+          vim.o.timeout = true
+          vim.o.timeoutlen = 300
+          require("which-key").setup {
+              -- your configuration comes here
+              -- or leave it empty to use the default settings
+              -- refer to the configuration section below
+          }
+      end
+  }
+
+  use { "github/copilot.vim" }
 end)
