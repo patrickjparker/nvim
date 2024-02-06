@@ -15,3 +15,6 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 500
 
 vim.g.mapleader = " "
+
+vim.o.splitright = true
+vim.o.splitbelow = true
