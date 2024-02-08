@@ -7,6 +7,3 @@ I was first inspired to begin this journey by the Primeagen. His video "0 to LSP
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (telescope project level string search)
 - [NerdFont](https://www.nerdfonts.com/font-downloads) (For shapes and symbols)
 
-## Possible Future Plugins
-- [conflit-marker](https://github.com/rhysd/conflict-marker.vim) - Alternate way of resolving git merge conflicts
-- [undo-tree](https://github.com/mbbill/undotree) - Visualizes undo history
