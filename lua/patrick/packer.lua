@@ -68,6 +68,8 @@ return require('packer').startup(function(use)
       end
   }
 
+  use { "Pocco81/auto-save.nvim" }
+
   use { "github/copilot.vim" }
   use { "lewis6991/gitsigns.nvim" }
 end)
