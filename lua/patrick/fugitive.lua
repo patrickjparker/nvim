@@ -1,1 +1,1 @@
-require("which-key").register({ ["<leader>gs"] = { vim.cmd.Git, "Git status" } })
+require("which-key").register({ ["<leader>gg"] = { vim.cmd.Git, "Git status" } })

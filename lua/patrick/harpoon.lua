@@ -15,6 +15,6 @@ wk.register({
         ["7"] = { function() ui.nav_file(7) end, "Navigate to file 7" },
         ["8"] = { function() ui.nav_file(8) end, "Navigate to file 8" },
         ["9"] = { function() ui.nav_file(9) end, "Navigate to file 9" },
-        ["<CR>"] = { ui.toggle_quick_menu, "Toggle quick menu" }
+        ["e"] = { ui.toggle_quick_menu, "Toggle quick menu" }
     }
 }, { prefix = "<leader>" })
