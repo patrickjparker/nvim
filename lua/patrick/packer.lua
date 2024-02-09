@@ -72,4 +72,7 @@ return require('packer').startup(function(use)
 
   use { "github/copilot.vim" }
   use { "lewis6991/gitsigns.nvim" }
+
+  -- Packer
+  use { "dgagn/diagflow.nvim" }
 end)
