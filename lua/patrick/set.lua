@@ -19,4 +19,4 @@ vim.g.mapleader = " "
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-vim.wo.signcolumn = "auto:1-2"
+vim.wo.signcolumn = "yes:2"
