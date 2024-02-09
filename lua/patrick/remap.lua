@@ -19,6 +19,9 @@ wk.register({
 wk.register({
     y = { "\"+y", "Yank to clipboard" }
 }, { prefix = "<leader>", mode = "v" })
+wk.register({
+    ["<leader>p"] = { "\"_dP", "Paste over text" }
+}, { mode = "v" })
 
 vim.keymap.set("n", "<leader>w", "<C-w>")
 vim.keymap.set("n", "<leader>q", "ZZ")
