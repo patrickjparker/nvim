@@ -75,4 +75,5 @@ return require('packer').startup(function(use)
 
   -- Packer
   use { "dgagn/diagflow.nvim" }
+  use { "machakann/vim-sandwich" }
 end)
