@@ -73,7 +73,12 @@ return require('packer').startup(function(use)
   use { "github/copilot.vim" }
   use { "lewis6991/gitsigns.nvim" }
 
-  -- Packer
+  -- Diagnostic text in top right
   use { "dgagn/diagflow.nvim" }
+  -- Surround text with arbitrary characters
   use { "machakann/vim-sandwich" }
+  -- Navigation
+  use { "ggandor/leap.nvim" }
+  -- Undo tree
+  -- use { "mbbill/undotree" }
 end)
