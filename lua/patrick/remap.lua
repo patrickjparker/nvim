@@ -23,7 +23,19 @@ wk.register({
     ["<leader>p"] = { "\"_dP", "Paste over text" }
 }, { mode = "v" })
 
-vim.keymap.set("n", "<leader>w", "<C-w>")
+wk.register({
+    w = {
+        name = "Window",
+        h = { "<C-w>h", "Move to left window" },
+        j = { "<C-w>j", "Move to bottom window" },
+        k = { "<C-w>k", "Move to top window" },
+        l = { "<C-w>l", "Move to right window" },
+        s = { "<C-w>s", "Split window horizontally" },
+        v = { "<C-w>v", "Split window vertically" },
+        w = { "<C-w>w", "Move to next window" },
+        q = { "<C-w>q", "Close window" }
+    }
+}, { prefix = "<leader>" })
 vim.keymap.set("n", "<leader>q", "ZZ")
 
 wk.register({
